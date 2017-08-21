@@ -43,7 +43,7 @@ $body.click(function(e) {
     // Getting the jason value from zipcode API - https://openweathermap.org/
     function getAPI(cityOrZipCode, inputValue) {
       $.get(
-        `http://api.openweathermap.org/data/2.5/weather?${cityOrZipCode +
+        `https://api.openweathermap.org/data/2.5/weather?${cityOrZipCode +
           inputValue}&units=imperial&APPID=e366232d680aa61d2721833f06d4cd9e`,
         function(data) {
           $location.html(data.name);

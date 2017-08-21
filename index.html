@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather APP</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Zipcode User Input  -->
+    <form class="zipCodeContainer">
+        <input type="text" class="numInput" placeholder="Enter City/ZipCode" />
+        <!-- onkeypress event From stackoverflow - Yes, was able to understand onkeypress='return event.keyCode >= 48 && event.charCode <= 57'-->
+        <input type="submit" class="btn" value="Search" />
+    </form>
+    <!--Results container  -->
+    <div class="resultContainer" style="display: none;">
+        <div class="location"></div>
+        <div class="currentTemp"></div>
+        <div class="description"></div>
+        <div class="temp">
+            <p id="min"></p>
+            <p id="max"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

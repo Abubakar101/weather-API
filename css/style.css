@@ -1,0 +1,133 @@
+body {
+  background-color: #eee;
+}
+
+.zipCodeContainer {
+  margin-top: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.newzipCodeContainer {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.numInput {
+  height: 50px;
+  padding: 22px;
+  border: none;
+  border-top-left-radius: 50px;
+  outline: none;
+  font-size: 35px;
+  color: #37c88d;
+  transition: all 1s ease-in-out;
+}
+
+.newNumInput {
+  height: 10px;
+  padding: 25px;
+  border: none;
+  border-top-left-radius: 32px;
+  outline: none;
+  font-size: 20px;
+  color: #37c88d;
+  transition: all 1s ease-in-out;
+}
+.btn {
+  height: 94px;
+  padding: 22px;
+  border: none;
+  background: #e2e6e3;
+  border-bottom-right-radius: 32px;
+  transition: all .2s;
+  outline: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  transition: all 1s ease-in-out;
+}
+
+.newBtn {
+  height: 60px;
+  line-height: 0px;
+  padding: 22px;
+  border: none;
+  background: #e2e6e3;
+  border-bottom-right-radius: 32px;
+  outline: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #37c88d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newBtn:hover {
+  background-color: #37c88d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.resultContainer {
+  height: 700px;
+  width: 60%;
+  background: azure;
+  margin: 10px auto;
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'arial';
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100px;
+ animation: opacityChange 4s;
+}
+
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.location {
+  height: 94px;
+  width: 37%;
+  /* background: purple; */
+}
+.currentTemp {
+  height: 200px;
+  width: 65%;
+  font-size: 250px;
+  line-height: 200px;
+   letter-spacing: 10px; 
+}
+
+.description {
+  height: 100px;
+  width: 60%;
+  /* background: red; */
+}
+.temp {
+  height: 200px;
+  width: 60%;
+  /* background: green; */
+  display: flex;
+justify-content:space-around;
+}
